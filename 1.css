@@ -1,0 +1,105 @@
+body {
+    background: radial-gradient(circle, hsla(221, 100%, 18%, 1) 35%, rgb(106, 150, 255) 100%);
+    background-size: 100vw 100vh;
+    font-family: monospace;
+    padding: 2vh;
+    position: fixed;
+}
+
+.top {
+    display: block;
+}
+
+.sidepanel {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 4vw;
+    transition: 0.5s;
+}
+  
+.sidepanel a {
+    padding: 0.5vw;
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: rgb(0, 0, 255);
+    display: block;
+    transform: translate(20px, 0);
+    transition: 0.5s;
+}
+
+.sidepanel a:hover {
+    color: #ffffff;
+}
+
+.openbtn {
+    font-size: 2.5vw;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff00;
+    border: none;
+    z-index: 1000;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.openbtn:hover{
+    color: rgb(0, 0, 255);
+}
+
+.openbtn.open{
+    position: absolute;
+    text-align: center;
+    transform: translate(20vw, 0) rotate(90deg);
+}
+
+.sidepanel.open{
+    width: 20vw;
+}
+
+.image1{
+    padding-top: 10vh;
+    width: 95vw;
+    margin-left: 1vw;
+    height: auto;
+}
+
+.image2{
+    display: block;
+    padding-top: 4vh;
+    width: 40vw;
+    height: auto;
+    margin-left: 15vw;
+}
+
+.image3{
+    display: block;
+    padding-top: 4vh;
+    width: 30vw;
+    height: auto;
+    margin-left: 35vw;
+}
+
+.portfolio{
+    font-size: 10vw;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 38vh;
+    right: 4vw;
+}
+
+@media print{
+    .middle{
+        margin-top: 10vh;
+    }
+    .portfolio{
+        top: 30vh;
+    }
+    .openbtn{
+        display: none;
+    }
+}

@@ -1,0 +1,91 @@
+body {
+    background: rgb(0, 0, 0);
+    font-family: monospace;
+    padding: 2vh;
+    position: fixed;
+}
+
+.top {
+    display: block;
+    position: fixed;
+}
+
+.sidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #000000;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 4vh;
+    transition: 0.5s;
+}
+  
+.sidepanel a {
+    padding: 1vh;
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: rgb(0, 0, 255);
+    display: block;
+    transform: translate(20px, 0);
+    transition: 0.5s;
+}
+
+.sidepanel a:hover {
+    color: #ffffff;
+}
+
+.openbtn {
+    font-size: 2.5vw;
+    background-color: #000000;
+    color: rgb(0, 0, 255);
+    border: none;
+    z-index: 1000;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.openbtn:hover{
+    color: #ffffff;
+}
+
+.openbtn.open{
+    position: absolute;
+    text-align: center;
+    transform: translate(20vw, 0) rotate(90deg);
+}
+
+.sidepanel.open{
+    width: 20vw;
+}
+
+.image1{
+    padding-top: 9vh;
+    width: 97vw;
+    height: 30vh;
+}
+
+.image2{
+    display: block;
+    padding-top: 4vh;
+    width: 30vw;
+    height: 23vh; /*auto */
+    margin-left: 20vw;
+}
+
+.image3{
+    display: block;
+    padding-top: 4vh;
+    width: 30vw;
+    height: 23vh;
+    margin-left: 30vw;
+}
+
+.portfolio{
+    font-size: 5vw;
+    color: blue;
+    text-align: right;
+    position: absolute;
+    top: 28vh;
+    right: 4vw;
+}
