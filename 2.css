@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
     margin-right: 2vw;
 }
 
-.year {
+.year{
     display: block;
     background-color: #ffffff;
     color: rgb(0, 0, 255);
@@ -100,7 +100,7 @@ body::-webkit-scrollbar {
     transition: 0.5s;
 }
 
-.year:hover {
+.year:hover{
     color: #ffffff;
 }
 
@@ -143,7 +143,7 @@ button.active{
     background-color: #ffffff81;
 }
 
-.content1{
+.content{
     visibility: hidden;
     opacity: 0;
     height: 0;
@@ -156,43 +156,21 @@ button.active{
     background-color: #ffffff81;
     top: 0;
     transition: opacity 0.5s ease;
-    text-align: end;
+    text-align: center;
 }
 
-.content1 img{
-    width: 20vw;
+.content img{
+    width: 28vw;
     height: auto;
     float: right;
-    margin: 0vw 0 0 1.5vw;
+    margin: 0 0.5vw 0 0;
 }
 
-.content1 video{
+.content video{
     width: 86vw;
     height: auto;
     float: right;
     margin: 1.5vw 0 0 1.5vw;
-}
-
-.content2{
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    padding: 0;
-    color: rgb(0, 0, 255);
-    margin-left: 1vw;
-    margin-right: 1vw;
-    font-size: 1.5vw;
-    overflow: hidden;
-    background-color: #ffffff81;
-    top: 0;
-    transition: opacity 0.5s ease;
-}
-
-.content2 img{
-    width: 20vw;
-    height: auto;
-    float: left;
-    margin: 1.5vw 1.5vw 0 0;
 }
 
 .row {
@@ -417,5 +395,344 @@ button.active{
     }
     .links{
         margin-left: 2vw;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .sidepanel {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        background-color: #ffffff;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 4vw;
+        transition: 0.5s;
+    }
+      
+    .sidepanel a {
+        padding: 0.75vw;
+        text-decoration: none;
+        font-size: 5vw;
+        color: rgb(0, 0, 255);
+        display: block;
+        transform: translate(20px, 0);
+        transition: 0.5s;
+    }
+    
+    .sidepanel a:hover {
+        color: #ffffff;
+    }
+    
+    .openbtn {
+        font-size: 6vw;
+        color: rgb(255, 255, 255);
+        background-color: #ffffff00;
+        border: none;
+        z-index: 1000;
+        position: absolute;
+        transition: 0.5s;
+    }
+    
+    .openbtn:hover{
+        color: rgb(0, 0, 255);
+    }
+    
+    .openbtn.open{
+        position: absolute;
+        text-align: center;
+        transform: translate(38vw, 0) rotate(90deg);
+    }
+    
+    .sidepanel.open{
+        width: 40vw;
+    }
+    
+    .middle{
+        margin-top: 10vw;
+        justify-content: center;
+    }
+    
+    .aboutme{
+        color: rgb(255, 255, 255);
+        font-size: 3vw;
+        display: flex;
+        margin: -1vh 1vw 1vh 1vw;
+    }
+    
+    .aboutme img{
+        width: 42vw;
+        height: 56vh;
+        margin-right: 3vw;
+        margin-top: 2.5vh;
+    }
+    
+    .year{
+        display: block;
+        background-color: #ffffff;
+        color: rgb(0, 0, 255);
+        border: none;
+        margin-left: 1vw;
+        padding: 2vh 20vw 2vh 20vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 5vw;
+        text-decoration: none;
+        margin-top: 1vw;
+        transition: 0.5s;
+    }
+    
+    .year:hover{
+        color: #ffffff;
+    }
+    
+    .yearcontent{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        color: rgb(0, 0, 255);
+        margin-left: 1vw;
+        margin-right: 0.6vw;
+        overflow: hidden;
+        background-color: #ffffff81;
+        top: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .collapsible {
+        display: block;
+        background-color: #ffffff;
+        color: rgb(0, 0, 255);
+        border: none;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 2vh 25vw 2vh 25vw;
+        text-align: center;
+        font-family: monospace;
+        font-size: 3.5vw;
+        text-decoration: none;
+        margin-top: 1vw;
+        transition: 0.5s;
+    }
+      
+    .collapsible:hover {
+        color: #ffffff;
+    }
+    
+    button.active{
+        background-color: #ffffff81;
+    }
+    
+    .content{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        color: rgb(0, 0, 255);
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 2.5vw;
+        overflow: hidden;
+        background-color: #ffffff81;
+        top: 0;
+        transition: opacity 0.5s ease;
+        text-align: center;
+    }
+    
+    .content img{
+        width: 84vw;
+        height: auto;
+        float: right;
+        margin: 1.5vw 0 0 1.5vw;
+    }
+    
+    .content video{
+        width: 84vw;
+        height: auto;
+        float: right;
+        margin: 1.5vw 0 0 1.5vw;
+    }
+    
+    .row {
+        display: flex;
+        /* flex-wrap: wrap; */
+        margin-top: -2vw;
+        margin-left: -1vw;
+      }
+    
+    .column {
+        /* flex: 26%; */
+        max-width: 22vw;
+        padding: 1vw;
+    }
+    
+    .column img {
+        /* vertical-align: middle; */
+        width: 100%;
+        padding: 1vw;
+    }
+    
+    .square{
+        position: relative;
+        width: 12vw;
+        height: 20vh;
+        background-color: #ffffff;
+        top: 0vh;
+        left: 20vw;
+        border-radius: 1vw;
+    }
+    .circle{
+        position: relative;
+        width: 12vw;
+        height: 20vh;
+        background-color: #ffffff;
+        top: 20vh;
+        left: 40vw;
+        border-radius: 5vw;
+    }
+    
+    .steaming-coffee {
+        position: fixed;
+    }
+    
+    .cup{
+        position: relative;
+        width: 12vw;
+        height: 20vh;
+        background-color: #ffffff;
+        top: 20vh;
+        left: 60vw;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .cup:before {
+        content:"";
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        border: 1.5vw solid #ffffff;
+        border-radius:50%;
+        top: 3.5vh;
+        left: 9vw;
+    }
+    
+    .test {
+        position: relative;
+        width: 15vw;
+        height: 10vh;
+        overflow: hidden;
+        opacity:0.5;
+        top: -12vh;
+        left: 61.5vw;
+    }
+    
+    @keyframes steam {
+        0% {transform: translateY(100px);}
+        100% {transform: translateY(7px);}
+    }
+    
+    .steam {
+        position: absolute;
+        top:100px;
+        animation: steam 1s linear infinite;
+    }
+    
+    .steam-2 {
+        position: absolute;
+        top:100px;
+        left:50px;
+        animation: steam 1s linear infinite;
+    }
+    
+    .steam-3 {
+        position: absolute;
+        top:100px;
+        left:100px;
+        animation: steam 1s linear infinite;
+    }
+    
+    .one {
+        position: absolute;
+    }
+    
+    .two {
+        position: absolute;
+    }
+    
+    .steam:before, .one:before, .two:before, .steam-2:before, .steam-3:before {
+        content:"";
+        position: absolute;
+        border-left: 7px solid white;
+        border-top: 7px solid white;
+        width:30px;
+        height: 30px;
+        border-top-left-radius:100%;
+        transform: rotate(-40deg);
+    }
+    
+    .one:before {
+        top:-93px;
+        left:0;
+    }
+    
+    .two:before {
+        top:-185px;
+        left:1.2px;
+    }
+    
+    .steam:after, .one:after, .two:after, .steam-2:after, .steam-3:after {
+        content:"";
+        position: absolute;
+        border-right: 7px solid white;
+        border-top: 7px solid white;
+        width:30px;
+        height: 30px;
+        border-top-right-radius:100%;
+        transform: rotate(40deg);
+    }
+    
+    .steam:after {
+        top:-46.5px;
+        left:4px;
+    }
+    
+    .one:after {
+        top: -139.5px;
+        left:4px;
+    }
+    
+    .two:after {
+        top:-231px;
+        left:4.7px;
+    }
+    
+    .steam-2:after {
+        top:-46.5px;
+        left:4.5px;
+    }
+    
+    .steam-3:after {
+        top:-46.5px;
+        left:4.5px;
+    }
+    
+    .links{
+        text-align: center;
+        margin-top: 2vw;
+    }
+    
+    .links a{
+        color: rgb(255, 255, 255);
+        font-size: 2vw;
+        text-decoration: none;
+        transition: 0.5s;
+        padding: 4vw;
+    }
+    
+    .links a:hover{
+        color: rgb(0, 0, 255);
     }
 }
