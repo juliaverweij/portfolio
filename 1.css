@@ -103,3 +103,88 @@ body {
         display: none;
     }
 }
+
+
+@media only screen and (orientation: portrait) {
+    .sidepanel {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        background-color: #ffffff;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 4vw;
+        transition: 0.5s;
+    }
+      
+    .sidepanel a {
+        padding: 0.75vw;
+        text-decoration: none;
+        font-size: 5vw;
+        color: rgb(0, 0, 255);
+        display: block;
+        transform: translate(20px, 0);
+        transition: 0.5s;
+    }
+    
+    .sidepanel a:hover {
+        color: #ffffff;
+    }
+    
+    .openbtn {
+        font-size: 6vw;
+        color: rgb(255, 255, 255);
+        background-color: #ffffff00;
+        border: none;
+        z-index: 1000;
+        position: absolute;
+        transition: 0.5s;
+    }
+    
+    .openbtn:hover{
+        color: rgb(0, 0, 255);
+    }
+    
+    .openbtn.open{
+        position: absolute;
+        text-align: center;
+        transform: translate(38vw, 0) rotate(90deg);
+    }
+    
+    .sidepanel.open{
+        width: 40vw;
+    }
+    
+    .image1{
+        padding-top: 8vh;
+        width: 90vw;
+        margin-left: 1vw;
+        height: auto;
+    }
+    
+    .image2{
+        display: block;
+        padding-top: 2vh;
+        width: 40vw;
+        height: auto;
+        margin-left: 15vw;
+    }
+    
+    .image3{
+        display: block;
+        padding-top: 2vh;
+        width: 30vw;
+        height: auto;
+        margin-left: 35vw;
+    }
+    
+    .portfolio{
+        font-size: 12vw;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 17vh;
+        right: 5vw;
+    }
+}
